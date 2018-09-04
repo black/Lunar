@@ -5,3 +5,7 @@ An image viewer for desktop
 open command prompt / cmd and type
 
 npm start
+
+# Screenshot
+
+![alt text](https://github.com/black/Lunar/blob/master/Capture.PNG)
