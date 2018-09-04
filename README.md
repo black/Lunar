@@ -1,2 +1,7 @@
 # Lunar
-An image view for desktop
+An image viewer for desktop
+
+# To Run
+open command prompt / cmd and type
+
+npm start
