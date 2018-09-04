@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Insert this line above script imports  -->
+    <script>
+    if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body> 
+    <ul>
+    	<li id="readfile">OPEN</li>
+    	<li id="prev">PREV</li>
+    	<li id="next">NEXT</li>
+    </ul> 
+    <div id="preview">
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

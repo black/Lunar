@@ -1,0 +1,14 @@
+{
+  "name": "picture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "black",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "2.0.8"
+  }
+}
