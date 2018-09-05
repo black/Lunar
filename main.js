@@ -52,10 +52,33 @@
         }
     });
 
+    $(document).keydown(
+        function(e) {
+            if (e.keyCode == 39) {
+                // $("a:focus").next().focus();
+                if (index < dirArray.length) {
+                    index++;
+                    displayImages(dirArray[index]);
+                } else {
+                    index = 0;
+                } 
+            }
+            if (e.keyCode == 37) {
+                // $("a:focus").prev().focus();
+                if (index > 0) {
+                    index--;
+                    displayImages(dirArray[index]);
+                } else {
+                    index = dirArray.length;
+                } 
+            }
+        }
+    );
+
     function displayImages(loadImage) {
         imgContainer.attr({
-        	"class":'preview-images',
-        	"src": "data:image/png;base64," + loadImage
+            "class": 'preview-images',
+            "src": "data:image/png;base64," + loadImage
         });
         divContainer.empty().append(imgContainer);
     }
