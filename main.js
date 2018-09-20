@@ -10,6 +10,13 @@
     let divContainer = $('#preview');
 
     $('#readfile').on('click', function() {
+        openFolder();
+    });
+    $('#preview').on('click', function() {
+        openFolder();
+    });
+
+    function openFolder() {
         dialog.showOpenDialog({
             title: "Open Folder",
             filters: [{
@@ -33,7 +40,7 @@
                 });
             }
         });
-    });
+    }
 
     $('#prev').on('click', function() {
         if (index > 0) {
@@ -61,7 +68,7 @@
                     displayImages(dirArray[index]);
                 } else {
                     index = 0;
-                } 
+                }
             }
             if (e.keyCode == 37) {
                 // $("a:focus").prev().focus();
@@ -70,7 +77,7 @@
                     displayImages(dirArray[index]);
                 } else {
                     index = dirArray.length;
-                } 
+                }
             }
         }
     );
