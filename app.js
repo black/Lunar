@@ -5,7 +5,7 @@ const electron = require('electron'),
 const { app, BrowserWindow } = electron;
 
 let mainWindow;
-// demo for abhay
+ 
 app.on('ready', function() {
     mainWindow = new BrowserWindow();
     mainWindow.setMenu(null);
@@ -14,4 +14,5 @@ app.on('ready', function() {
         protocol: 'file:',
         slashes: true
     }));
+    mainWindow.webContents.openDevTools()
 });
